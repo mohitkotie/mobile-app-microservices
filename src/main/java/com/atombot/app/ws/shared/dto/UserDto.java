@@ -9,7 +9,7 @@ public class UserDto implements Serializable {
 	 */
 	private static final long serialVersionUID = -7103201129431062545L;
 	
-	private String id;
+	private Long id;
 	private String userId;
 	private String firstName;
 	private String lastName;
@@ -19,11 +19,11 @@ public class UserDto implements Serializable {
 	private String emailVerificationToken;
 	private Boolean emailVerificationStatus = false;
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

@@ -17,9 +17,10 @@ public class UserEntity implements Serializable {
 	 */
 	private static final long serialVersionUID = -971723885566178024L;
 	@Id
-	@GeneratedValue(generator = "system-uuid")
-	@GenericGenerator(name = "system-uuid", strategy = "uuid")
-	private String id;
+//	@GeneratedValue(generator = "system-uuid")
+//	@GenericGenerator(name = "system-uuid", strategy = "uuid")
+	@GeneratedValue
+	private Long id;
 
 	@Column(nullable = false)
 	private String userId;
@@ -42,11 +43,11 @@ public class UserEntity implements Serializable {
 	@Column(nullable = false)
 	private Boolean emailVerificationStatus = false;
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
