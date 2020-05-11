@@ -25,6 +25,7 @@ public class UserServiceImpl implements UserService {
 		if (storedUserDetails != null)
 			throw new RuntimeException("Record Already Exits");
 
+		
 		UserEntity userEntity = new UserEntity();
 		BeanUtils.copyProperties(user, userEntity);
 		String publicUserId = utils.generatedUserId(30);
