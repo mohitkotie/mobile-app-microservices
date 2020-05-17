@@ -1,4 +1,4 @@
-package com.atombot.app.ws.shared.dto;
+package com.atombot.app.ws.shared;
 
 import java.util.Random;
 import java.security.*;
