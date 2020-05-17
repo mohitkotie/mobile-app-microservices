@@ -10,8 +10,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.atombot.app.ws.UserRepository;
 import com.atombot.app.ws.io.entity.UserEntity;
+import com.atombot.app.ws.io.repositories.UserRepository;
 import com.atombot.app.ws.service.UserService;
 import com.atombot.app.ws.shared.dto.UserDto;
 import com.atombot.app.ws.shared.dto.Utils;
